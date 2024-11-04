@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background: linear-gradient(to bottom right, red, yellow,lightblue);
+}
+.sidebar> h1{
+
+    margin: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.profileimg{
+
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.adminpage{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    margin-bottom: 230px;
+}
+.adminpage> a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+}
+
+.logout{
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    border:2px solid black;
+}

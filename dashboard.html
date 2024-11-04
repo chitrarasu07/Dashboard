@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task 1/dashboard.css" type="text/css"/>
+    <script>
+        window.addEventListener('load',function(){
+                let email=localStorage.getItem('email');
+                if(email)
+                   {
+                      document.getElementById('msg').innerHTML="this is your Email :" +email;
+                  }
+        });
+       function logout(){
+        localStorage.removeItem('email');
+        window.location.href="index.html";
+       }
+    </script>
+</head>
+<body>
+    
+        
+        <div class="sidebar">
+         <img src="./images/Profile-512.png" alt="profileimg" class="profileimg"/>
+         <h1>Admin Page</h1>
+         <div class="adminpage">
+            
+               <a href="#">Home</a>
+               <a href="#">Services</a>
+               <a href="#">address</a>
+               <a href="#">abouts</a>
+           
+         </div>
+         
+       
+        <button class="logout" onclick="logout()">LogOut</button>
+         </div>
+         <div>
+            
+            <h1 style="text-align: center;">Welcome to Dashboard </h1>
+            <p id="msg" style="text-align: center;">this is your Email :</p>
+         </div>
+   
+</body>
+</html>
