@@ -6,12 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./task 1/dashboard.css" type="text/css"/>
     <script>
+        // window.addEventListener('load',function(){
+        //         let email=localStorage.getItem('email');
+        //         if(email)
+        //            {
+        //               document.getElementById('msg').innerHTML="this is your Email :" +email;
+        //           }
+        // });
         window.addEventListener('load',function(){
-                let email=localStorage.getItem('email');
-                if(email)
-                   {
-                      document.getElementById('msg').innerHTML="this is your Email :" +email;
-                  }
+                document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh' data=home.html type=text/html ><object>";
         });
        function logout(){
         localStorage.removeItem('email');
