@@ -21,20 +21,36 @@
         window.location.href="index.html";
        }
 
-       function loadpage(page){
-           if(page==='home'){
-            document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh' data=home.html type=text/html ><object>";
-           }
-           else if(page==='services'){
-            document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=services.html type=text/html ><object>";
-           }
-           else if(page==='address'){
-            document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh'data=address.html type=text/html ><object>";
-           }
-           else if(page==='abouts'){
-            document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=abouts.html type=text/html ><object>";
-           }
-       }
+    function loadpage(page){
+            // if(page==='home'){
+            // document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh' data=home.html type=text/html ><object>";
+            // }
+            // else if(page==='services'){
+            // document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=services.html type=text/html ><object>";
+            // }
+            // else if(page==='address'){
+            // document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh'data=address.html type=text/html ><object>";
+            // }
+            // else if(page==='abouts'){
+            // document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=abouts.html type=text/html ><object>";
+            // }
+            switch(page){
+                case 'home':
+                 document.getElementById('maincontent').innerHTML="<object style='width:100%;height:100vh' data=home.html type=text/html ><object>";
+                    break;
+                case 'services':
+                 document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=services.html type=text/html ><object>";
+                    break;
+                case 'address':
+                document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=address.html type=text/html ><object>";
+                    break;
+                case 'abouts':
+                document.getElementById('maincontent').innerHTML="<object  style='width:100%;height:100vh' data=abouts.html type=text/html ><object>";
+                    break;
+                default:
+                    console.log("page not found");
+                }
+        }
     </script>
     
 </head>
@@ -56,7 +72,7 @@
        
         <button class="logout" onclick="logout()">LogOut</button>
          </div>
-         <div class="rightsidebar" id="maincontent" style="width: 100%;">
+         <div class="rightsidebar" id="maincontent">
             
             <h1 style="text-align: center;">Welcome to Dashboard </h1>
             <p id="msg" style="text-align: center;">this is your Email :</p>
